@@ -1,0 +1,781 @@
+/*
+	Theme Name: Eurokaev
+	Description: Eurokaev WordPress Theme
+	Version: 1.0.0
+	Author: Kaia konsap
+	Tags: gray,red, HTML5, CSS3
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+/*------------------------------------*\
+    MAIN
+\*------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Myriad Pro;
+    color: #110200;
+    background-color: white;
+    font-size: 16px;
+
+}
+
+.container {
+    width: 88.5%;
+    max-width: 1194px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+#slider_cont
+{
+   overflow: visible;
+   height: 285px;
+}
+section
+{
+  margin: 80px 0 15px;
+  background-color: #F2F2F2; 
+}
+header
+{
+    background-color: #2F2F2F;
+}
+
+
+#header_container {
+    width: 88.5%;
+    max-width: 1194px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#brand, nav, #sidebar {
+    display: inline-block;
+     text-transform: uppercase;
+}
+nav
+{
+    position: absolute;
+    right: 0px;
+    top: 0;
+    background-color: #2f2f2f;
+}
+nav select
+{
+    background-color: #2F2F2F;
+    border: none;
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.mainmenu
+{
+    display: inline-block;
+}
+.sr-only
+{
+    position:absolute;
+    width:1px;
+    height:1px;
+    margin:-1px;
+    padding:0;
+    overflow:hidden;
+    clip:rect(0, 0, 0, 0);
+    border:0
+    }
+ .navbar-toggle{
+    display:none;
+    position:relative;
+    margin:6px 23px;
+    padding: 13px 10px;
+    float: right;
+    background-color:#2f2f2f;
+    background-image:none;
+    border-radius:2px;
+    vertical-align:middle
+    }
+.navbar-toggle .icon-bar
+{
+    display:block;
+    width:22px;
+    height:2px;
+    border-radius:1px;
+    border-bottom:1px solid white}
+button{
+    -webkit-appearance:button;
+    cursor:pointer;
+    overflow:visible;
+    margin:0;
+}
+
+#sidebar
+{
+ width: 30%;
+min-width: 223px;
+min-height: 269px;
+ background-color: #F2F2F2;   
+ vertical-align: top;
+ float: right;
+ text-align: center;
+
+}
+#sidebar ul
+{
+    margin-bottom: -6px;
+}
+#sidebar #sidebar_margin
+{
+    margin-top: 30px;
+}
+nav li, #sidebar li
+{
+    list-style-type: none;
+}
+
+nav ul, nav li
+{
+    display: inline-block;
+}
+#sidebar li
+{
+    display: block;
+    text-align: left;
+    position: relative;
+}
+
+nav a:link, #sidebar a:link {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding:23px 18px 24px 18px; 
+    background-color: #2f2f2f;
+    display: block;
+     font-weight: bold;
+}
+#sidebar a:link {
+    padding:10px 25px 10px 25px; 
+    min-height: 37px;
+    word-wrap:break-word;
+     color: #2f2f2f;
+      background-color: #F2F2F2;
+}
+#sidebar a:link span{
+position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+      padding-right: 25px;
+}
+}
+ #brand a
+ {
+    text-decoration: none !important;    
+ }
+ #brand a:link{
+    color: white;
+    text-decoration: none ;
+}
+ #brand a:link h2{
+line-height: 56px;
+font-size: 54px;
+padding-top: 9px;
+}
+
+  #owl-demo .item img{
+    display: block;
+height: auto;
+width: 100%;
+    }
+#single_image
+{
+height: 285px;
+overflow: hidden;
+}
+#owl-demo .image
+{
+height: 285px;
+    position: relative;
+}
+
+.image .alt_text
+{
+    background-color: white;
+    filter:alpha(opacity=70);
+    background-color:rgba(255,255,255,0.7);
+    color: #c81201;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    padding:17px; 
+      max-width: 468px;
+ word-wrap: break-word;
+}
+.image .alt_text a:link,.image .alt_text a:visited,.image .alt_text a:hover
+{
+color: #2B60DE;
+font-size: 20px;
+}
+
+
+.sub_container a:link {
+    font-size: 16px;
+}
+
+nav a:visited {
+    color: white;
+    text-decoration: none;
+
+}
+#sidebar a:visited {
+   
+    text-decoration: none;
+    color: #2f2f2f;
+}
+#brand a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+nav .mainmenu a:hover, #sidebar a:hover{
+    color: white;
+    background-color: #c81201;
+}
+nav .lang a:hover
+{
+  background-color: gray;   
+}
+a:hover .t_container
+{
+color: #a2a2a2;
+}
+a:hover .readmore
+{
+color: #e79494 !important;
+}
+a:hover .discount, a:hover .imgwrap img
+{
+    filter:alpha(opacity=90) !important;
+    opacity:0.9 !important;
+}
+a:active {
+    color: white;
+}
+
+.post-edit-link
+{
+    display: block;
+    color: #2B60DE;
+}
+.sub_container {
+    width: 70%;
+    float: right;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#slider_subcont
+{
+    margin-bottom: -28px; 
+}
+#single_subc {
+width: 100%;
+ text-align: center;
+ vertical-align: top;
+background-color: #F2F2F2;
+}
+#texts 
+{
+    margin-top: 30px;
+}
+
+#single_texts
+{
+    position: relative;
+    margin-left: 20px;
+}
+#single_subc #single_texts
+{
+    display: inline-block;
+    width: 70%;
+    margin-left:0px;
+   min-width: 670px;
+}
+#single_texts .text
+{
+    display: inline-block;
+    padding: 30px 100px 30px 30px ; 
+    min-width: 670px;
+      position: static;
+}
+#single_subc #single_texts .text
+{
+    padding: 30px; 
+    text-align: left;
+}
+#single_texts .text p
+{
+    padding-bottom: 10px ; 
+}
+
+.t_container,.t_content,
+.imgwrap, span
+{
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.t_content
+{
+       width: 664px;
+}
+.t_container
+{ width: 500px;
+margin: 0px 20px 0 21px;
+color: #2f2f2f;
+}
+
+.text .t_content .readmore {
+    color: #d34242;
+    vertical-align: bottom;
+text-transform: uppercase;
+ font-weight: bold;
+}
+
+.discount
+{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: white;
+    background-image:url("./img/discount.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+height: 140px;
+width: 140px;
+font-size: 30px;
+
+font-weight: bold;
+text-align: right;
+}
+#single_texts .text .discount
+{
+      color: #c81201;
+  background-image: none;
+}
+.discount span
+{
+padding-top: 17px;
+padding-right: 5px;
+}
+.text .discount span
+{
+padding-right: 17px;
+}
+.imgwrap
+{
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+}
+.imgwrap img
+{
+    height: 140px;
+    width: auto;
+}
+
+
+.text {
+    display: block;
+    margin-bottom: 36px;
+    background-color: #f2f2f2;
+    position: relative;
+}
+.text:last-child {
+    margin-bottom: 15px;
+
+}
+#single_subc #single_texts .text
+{
+    margin-bottom: 0px ; 
+}
+
+form
+{
+    margin-top: 15px;
+}
+form h2
+{
+        font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.ninja-forms-form-title
+{margin-top: 15px;
+}
+form .form_tab, form .field-wrap
+{
+    display: inline-block;
+    width: 32%;
+    vertical-align: top;
+}
+
+form .form_tab label, form .field-wrap label
+{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: normal;
+    font-size: 13px;
+text-transform: uppercase;
+}
+form .form_tab input, form .form_tab textarea,form .field-wrap input, form .field-wrap textarea
+{
+    width: 100%;
+    line-height: 13px;
+}
+form .field-wrap input
+{
+    height: 24px;
+}
+form .textarea-wrap textarea {
+    height: 40px;
+}
+form .field-wrap input[type="submit"] 
+{    text-transform: uppercase;
+       height: 40px;
+}
+form  .submit-wrap 
+{
+           vertical-align: bottom;
+
+}
+.h3,.container h2, h3 {
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+#white {
+    color: white;
+}
+
+nav .current_page_item a, #sidebar .current_page_item a,nav .current_page_parent a{
+    background-color: #c81201 !important;
+    color: white !important;
+}
+nav .current-lang a
+{
+    background-color: gray !important;
+}
+nav .lang li:first-child
+{
+    margin-right: -3px;
+    margin-left: -3px;
+}
+.contact {
+    display: inline-block;
+}
+
+.footer {
+    width: 90%;
+    background-color: white;
+    color: #2f2f2f;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    padding-bottom: 30px;
+       padding-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+@media screen and (max-width:1381px){
+.container,#header_container {
+    width: 88.5%;
+    max-width: 1194px;
+}
+@media screen and (max-width:1308px){
+
+    .container,#header_container {
+    width: 90%;
+}
+
+.t_content {
+    width: 524px;
+}
+
+.t_container {
+    width: 400px;
+}
+form
+{
+    width: 100%;
+}
+}
+
+@media screen and (max-width:1229px){
+
+#texts {
+    margin-top: 20px;
+}
+
+}
+@media screen and (max-width:1117px){
+
+.t_content {
+    width: 450px;
+}
+
+.t_container {
+    width: 330px;
+}
+#single_subc #single_texts, #single_texts .text, #single_subc  #single_texts .text
+{
+    min-width: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+}
+@media screen and (max-width:1056px){
+
+.t_content {
+    width: 440px;
+}
+
+.t_container {
+    width: 312px;
+    margin: 0px 10px 0px 21px;
+}
+
+}
+@media screen and (max-width:986px){
+
+.t_content {
+    width: 337px;
+}
+
+.t_container {
+   width: 253px;
+    margin: 0 0 0 5px;
+}
+.image span {
+right: 0;
+    }
+
+}
+@media screen and (max-width:885px) {
+  
+
+    #slider_section,#sidebar,#owl-demo
+    {
+        display: none;
+    }
+    #brand
+    {
+        padding-left: 15px;
+    }
+    nav
+    {
+        margin-right: 15px;
+    }
+    .container {
+        width: auto;
+        display: block;
+     
+    }
+
+    .sub_container {
+        max-width: none;
+        width: auto;
+        margin-left: 15px;
+        margin-right: 15px;
+        float: none;
+        display: block;
+    }
+    #list_subc
+    {
+        padding-top: 80px;
+    }
+    #single_subc
+    {
+         margin-left: 0px;
+        margin-right: 0px;
+    }
+   #single_subc #single_texts {
+    margin-left: 0;
+     width: 85%;
+}
+
+#single_texts .text {
+    padding: 20px;
+}
+#list_subc #texts{
+        margin-top: 0px;
+
+}
+    .t_content {
+    width: 485px;
+}
+.t_container {
+    width: 465px;
+    margin: 0px 0px 0px 15px;
+}
+
+.text .t_content .readmore {
+padding-left: 15px;
+}
+
+    .footer {
+        width: auto;
+        display: block;
+    }
+
+    .contact {
+        margin-left: 0;
+    }
+
+    .text {
+        text-align: left;
+    }
+
+    h1 {
+        padding-bottom: 11px;
+        word-wrap: break-word;
+        font-size: 17px;
+        display: inline-block;
+    }
+
+    #header_container {
+        width: auto;
+    }
+
+
+}
+@media screen and (max-width:733px){
+
+.discount 
+{
+    color: #c81201;
+background-image: none;
+}
+.t_content {
+    width: 432px;
+}
+.t_container {
+    width: 315px;
+}
+nav {
+
+    position: relative;
+     display:block;
+    display:none;
+     width:100%;
+     margin-top: 10px;
+}
+nav ul, nav li {
+    display: block;
+}
+
+.navbar-toggle{
+    display:inline-block !important;
+    float: none;
+margin: 6px 30px 0px 15px;
+vertical-align: top;
+}
+.mainmenu {
+  display: block !important;
+}
+.lang li
+{
+    display: inline-block;
+}
+   #brand a:link h2{
+    line-height: 44px;
+}
+}
+@media screen and (max-width:625px){
+   
+.imgwrap 
+{
+    display: none;
+}
+.t_container, .t_content {
+    width: auto;
+}
+.t_container {
+     margin: 0 15px;
+}
+.t_content {
+    width: auto;
+    padding: 20px 0px 10px 0;
+}
+#single_subc #single_texts {
+     width: 100%;
+}
+.text .t_content .readmore {
+    padding-right: 15px;
+padding-top: 6px;
+float: right;
+}
+
+form .form_tab,form .field-wrap {
+   width: 49%;
+}
+form .form_tab:nth-child(3) input, form .field-wrap:nth-child(3),, form .field-wrap:nth-child(5)  {
+   float: right;
+}
+
+form .form_tab label,form .field-wrap label {
+
+  margin-top: 11px;
+}
+}
+@media screen and (max-width:400px) {
+   #brand a:link h2 {
+    padding-top: 8px;
+    font-size: 35px;
+    line-height: 39px;
+
+}
+ .navbar-toggle {
+
+    padding: 9px 10px;
+    margin: 8px 23px;
+}
+form .form_tab, form .field-wrap {
+    width: 100%;
+}
+}
+@media screen and (max-width:290px) {
+
+ .navbar-toggle {
+
+    padding: 9px 10px;
+   margin: 0px 30px 8px 15px !important;
+    float: none;
+}
+.container {
+    padding-top: 12px;
+}
+form .form_tab:last-child,form .form_tab:last-child textarea,form .field-wrap:last-child,form .field-wrap:last-child textarea {
+   width: 100%;
+}
+    }
