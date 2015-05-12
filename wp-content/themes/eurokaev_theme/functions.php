@@ -318,6 +318,8 @@ if (is_admin()) :
 function my_remove_meta_boxes() {
   remove_meta_box('categorydiv', 'post', 'normal');
   remove_meta_box('tagsdiv-post_tag', 'post', 'normal');
+  remove_meta_box('dashboard_recent_comments', 'dashboard', 'normal'); // Recent Comments
+  remove_menu_page( 'edit-comments.php' );          //Comments
 }
 add_action( 'admin_menu', 'my_remove_meta_boxes' );
 endif;
