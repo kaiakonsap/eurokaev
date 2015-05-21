@@ -22,7 +22,7 @@ html, body {
 }
 
 body {
-    font-family: Myriad Pro;
+    font-family: Myriad Pro,sans-serif;
     color: #110200;
     background-color: white;
     font-size: 16px;
@@ -206,6 +206,7 @@ overflow: hidden;
 {
 height: 285px;
     position: relative;
+    background-size: 100% auto !important;
 }
 
 .image .alt_text
@@ -267,11 +268,12 @@ a:hover .readmore
 {
 color: #e79494 !important;
 }
-a:hover .discount, a:hover .imgwrap img
+a:hover .discount, a:hover .imgwrap
 {
     filter:alpha(opacity=90) !important;
     opacity:0.9 !important;
 }
+
 a:active {
     color: white;
 }
@@ -355,6 +357,11 @@ color: #2f2f2f;
 text-transform: uppercase;
  font-weight: bold;
 }
+.sub_container #single_texts .text a:link,.sub_container #single_texts .text a:visited,
+ .sub_container #single_texts .text a:hover,.sub_container #single_texts .text a:active
+{
+    color: #d34242;
+}
 
 .discount
 {
@@ -392,13 +399,8 @@ padding-right: 17px;
     width: 140px;
     height: 140px;
     overflow: hidden;
+    background-size: auto 140px !important;
 }
-.imgwrap img
-{
-    height: 140px;
-    width: auto;
-}
-
 
 .text {
     display: block;
@@ -434,7 +436,10 @@ form .form_tab, form .field-wrap
     width: 32%;
     vertical-align: top;
 }
-
+form .ninja-forms-required-items
+{
+    margin-bottom: 10px
+}
 form .form_tab label, form .field-wrap label
 {
     display: block;

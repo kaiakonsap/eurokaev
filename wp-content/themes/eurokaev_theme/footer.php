@@ -1,6 +1,8 @@
  <div class="footer">
         <p>
-            © firma
+            © <?php $bloginfo = get_bloginfo("name" );
+echo $bloginfo;
+ ?> 
         </p>
     </div>
 </div>

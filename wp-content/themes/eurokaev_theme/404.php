@@ -1,24 +1,22 @@
 <?php get_header(); ?>
 
-	<main role="main">
-		<!-- section -->
 		<section>
+<div class="container">
+	   
+	<div class="sub_container" id="single_subc">
+			 		
+		<div id="single_texts">
 
-			<!-- article -->
-			<article id="post-404">
+				<div class="text">
+				
+					<h3><?php echo pll__( 'Page not found', 'html5blank' ); ?></h1>
+				<h3>
+					<a href="<?php echo home_url(); ?>"><?php echo pll__( 'Return home?', 'html5blank' ); ?></a>
+				</h3>
+				</div>
+		</div>
+	</div>
 
-				<h1><?php _e( 'Page not found', 'html5blank' ); ?></h1>
-				<h2>
-					<a href="<?php echo home_url(); ?>"><?php _e( 'Return home?', 'html5blank' ); ?></a>
-				</h2>
-
-			</article>
-			<!-- /article -->
-
+</div>
 		</section>
-		<!-- /section -->
-	</main>
 
-<?php get_sidebar(); ?>
-
-<?php get_footer(); ?>

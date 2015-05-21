@@ -83,6 +83,9 @@ function html5blank_nav()
 		)
 	);
 }
+pll_register_string("More", "Read more");
+pll_register_string("Not found", "Page not found");
+pll_register_string("Return home", "Return home?");
 
 
 // Load HTML5 Blank scripts (header.php)
@@ -236,7 +239,7 @@ add_filter('excerpt_more', 'new_excerpt_more');
 // Remove Admin bar
 function remove_admin_bar()
 {
-    return true;
+    return false;
 }
 
 // Remove 'text/css' from our enqueued stylesheet

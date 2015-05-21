@@ -9,12 +9,15 @@
 $s_args = array( 'post_type' => 'post', 'posts_per_page' => -1 );
 $loop = new WP_Query( $s_args );?>
 	    <div id="owl-demo" class="owl-carousel owl-theme">
-	     <?php while ( $loop->have_posts() ) : $loop->the_post();?>
+	     <?php while ( $loop->have_posts() ) : $loop->the_post();
+	      $imgid = get_post_thumbnail_id();
+$imageurl = wp_get_attachment_image_src($imgid,'large', true);
+ ?>
 			    <div class="item">
-			    	 <div class="image"> 
-			    	 	<?php if ( has_post_thumbnail() ) {
-								the_post_thumbnail();
-						}?>
+			    	 <div class="image" <?php
+							if ( has_post_thumbnail() ) { ?>style="background:url(<?php echo $imageurl[0]; ?>) no-repeat center center;"<?php } ?>
+>
+			    	 	
 			    	    <span class="alt_text">
 						<?php
 						 remove_filter ('the_content',  'wpautop');
@@ -47,7 +50,7 @@ $lpages_args = array(
     'post_type'    => 'page',
     'post_status'  => 'publish',
     'show_date'    => '',
-    'sort_column'  => 'menu_order, post_title',
+    'sort_column'  => 'ID, menu_order',
         'sort_order'   => '',
     'title_li'     => '', 
     'walker'       => new Walker_Page
@@ -68,20 +71,22 @@ $c_args = array(
 'numberposts' => -1,
 	'post_status' => 'publish',
 	'post_parent' => $parent, // any parent
+	'orderby' => 'ID',
+	'order'   => 'ASC',
 );
 $posts = new WP_Query($c_args);
 
 			   while ( $posts->have_posts() ) : $posts->the_post();
-	 	$id=$post->ID;?>
+	 	$id=$post->ID;
+	 	 $image_id = get_post_thumbnail_id();
+$image_url = wp_get_attachment_image_src($image_id,'medium', true);
+ ?>
 				<div class="text">
 						
 					<a href="<?php echo get_permalink($id); ?>">
-						<span class="imgwrap">
-							<?php
-							if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-	the_post_thumbnail();
-} 
-?>
+						<span class="imgwrap" <?php
+							if ( has_post_thumbnail() ) { ?>style="background:url(<?php echo $image_url[0]; ?>) no-repeat center center;"<?php } ?>
+>
 						</span>
 				
 						<span class="t_content">
@@ -93,7 +98,7 @@ $posts = new WP_Query($c_args);
 <?php the_excerpt(); ?> 
 								</span>
 							</span>
-							<span class="readmore"><?php _e("Loe edasi")?></span>
+							<span class="readmore"><?php echo pll__("Read more")?></span>
 						</span>
 						<?php if(get_field('discount')):?>
 							<span class="discount"><span><?php the_field('discount')?>%</span></span>
